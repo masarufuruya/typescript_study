@@ -31,6 +31,7 @@
         "!./typings/**/*.ts"
     ],
     "files": [
+        "./five_mininues.ts",
         "./greeter.ts"
     ]
 }
