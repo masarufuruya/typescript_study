@@ -1,5 +1,16 @@
+var Student = (function () {
+    function Student(firstname, middleinitial, lastname) {
+        this.firstname = firstname;
+        this.middleinitial = middleinitial;
+        this.lastname = lastname;
+        this.fullname = firstname + ' ' + middleinitial + ' ' + lastname;
+    }
+    return Student;
+})();
 function greeter(person) {
-    return 'Hello, ' + person.firstname + ' ' + person.lastname;
+    return 'Hello, ' + person.middleinitial + ' ' + person.firstname + ' ' + person.lastname;
 }
-var user = { firstname: 'Jane', lastname: 'User' };
+// インタフェース
+/*var user = {firstname: 'Jane', lastname: 'User'};*/
+var user = new Student('Masaru', 'Mr.', 'Furuya');
 document.body.innerHTML = greeter(user);
